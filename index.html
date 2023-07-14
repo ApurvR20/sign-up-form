@@ -1,0 +1,66 @@
+<!-- credit the author as well -->
+<!-- how to handle the image while shrinking the page, maybe hide it? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="password_validation.js" defer></script>
+</head>
+<body>
+     <div class="left-side">
+      <div class="back-banner">
+         <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
+         
+         <p>ODIN</p>
+      
+      </div>
+     </div>
+
+     <div class="right-side">
+        <div>
+           <h3>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. <p>You <em>know</em> you want to.</p> </h3>
+        </div>
+        <h3>
+         Let's do this!!
+         </h3>
+        <form action="">
+           <div class="entry-field" >
+              <label for="first_name">First name </label>
+              <input type="text" id="first_name" name="first_name" required>
+           </div>
+
+           <div class="entry-field">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name">
+           </div>
+
+           <div class="entry-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+           </div>
+           
+           <div class="entry-field">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" required minlength="7" maxlength="10" pattern="\d+">
+           </div>
+           
+           <div class="entry-field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" class="error" required>
+           </div>
+           
+           <div class="entry-field" id="six">
+            <!-- check this and how to validate it before moving on -->
+              <label for="confirm">Confirm Password</label>
+              <input type="password" name="password" id="confirm" class="error" required>
+           </div>
+
+           <button type="submit" >Create Account</button>
+        </form>
+        <p>Already have an account? <a href="" style="color: #596D48; font-weight: 600;">Log in</a></p>
+     </div>
+</body>
+</html>
